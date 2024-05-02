@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Expense Tracker</h1>
+    <div class="container">
+      <form id="fillup-form">
+        <label for="description">Description:</label>
+        <input type="text" id="description" required />
+        <label for="date">Date:</label>
+        <input type="date" id="date" required />
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" required />
+        <button type="submit">Add Expense</button>
+      </form>
+    </div>
+
+    <div class="thead">
+      <table id="expense-table">
+        <thead>
+          <tr>
+            <th>Expenses</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+
+        <div class="added">
+          <tbody>
+            <!-- Expense rows will be added here -->
+          </tbody>
+        </div>
+      </table>
+    </div>
+
+    <script src="logic.js"></script>
+  </body>
+</html>
